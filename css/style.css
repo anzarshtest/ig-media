@@ -1,0 +1,70 @@
+body {
+  font-family: 'arialnarrow';
+  line-height: 1;
+  color: #292929; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+/*header*/
+.header {
+  width: 100%;
+  height: 105px;
+  background: #d6d7db; }
+
+.logo-box {
+  padding-top: 10px; }
+
+.logo-text-box {
+  margin-left: 8px;
+  padding-top: 16px; }
+
+.logo-text1 {
+  font-family: 'arialnarrowbold';
+  font-size: 30px;
+  color: #2c3e50; }
+
+.logo-text2 {
+  font-family: 'arialnarrow';
+  font-size: 20px;
+  color: #292929;
+  display: inline-block; }
+
+.menu {
+  list-style: none;
+  text-align: right; }
+  .menu li {
+    display: inline-block;
+    margin-left: 55px;
+    line-height: 105px; }
+    .menu li a {
+      display: inline-block;
+      position: relative;
+      color: #292929;
+      text-decoration: none;
+      font-family: 'arialnarrow';
+      font-size: 20px;
+      text-transform: uppercase;
+      line-height: 20px; }
+    .menu li a:hover {
+      color: #2980b9; }
+    .menu li a:hover::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      left: 0;
+      top: 100%;
+      height: 3px;
+      background: url(../img/menu-hover.png) repeat-x top left; }
+  .menu li:first-child {
+    margin-left: 0; }
+
+/*margin*/
+.az-margin-top5 {
+  margin-top: 5px; }
+
+/*margin*/
+/*header*/
+
+/*# sourceMappingURL=style.css.map */

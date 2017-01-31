@@ -1,0 +1,27 @@
+@font-face {
+    font-family: 'arialnarrow';
+    src: url('../fonts/arialnarrow/arialnarrow.eot');
+    src: url('../fonts/arialnarrow/arialnarrow.eot') format('embedded-opentype'),
+         url('../fonts/arialnarrow/arialnarrow.woff2') format('woff2'),
+         url('../fonts/arialnarrow/arialnarrow.woff') format('woff'),
+         url('../fonts/arialnarrow/arialnarrow.ttf') format('truetype'),
+         url('../fonts/arialnarrow/arialnarrow.svg#arialnarrow') format('svg');
+}
+@font-face {
+    font-family: 'arialnarrowbold';
+    src: url('../fonts/arialnarrowbold/arialnarrowbold.eot');
+    src: url('../fonts/arialnarrowbold/arialnarrowbold.eot') format('embedded-opentype'),
+         url('../fonts/arialnarrowbold/arialnarrowbold.woff2') format('woff2'),
+         url('../fonts/arialnarrowbold/arialnarrowbold.woff') format('woff'),
+         url('../fonts/arialnarrowbold/arialnarrowbold.ttf') format('truetype'),
+         url('../fonts/arialnarrowbold/arialnarrowbold.svg#arialnarrowbold') format('svg');
+}
+@font-face {
+    font-family: 'arialnarrowitalic';
+    src: url('../fonts/arialnarrowbold/arialnarrowitalic.eot');
+    src: url('../fonts/arialnarrowbold/arialnarrowitalic.eot') format('embedded-opentype'),
+         url('../fonts/arialnarrowbold/arialnarrowitalic.woff2') format('woff2'),
+         url('../fonts/arialnarrowbold/arialnarrowitalic.woff') format('woff'),
+         url('../fonts/arialnarrowbold/arialnarrowitalic.ttf') format('truetype'),
+         url('../fonts/arialnarrowbold/arialnarrowitalic.svg#arialnarrowitalic') format('svg');
+}
