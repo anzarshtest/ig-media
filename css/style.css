@@ -265,7 +265,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "топ";
+  content: "╤В╨╛╨┐";
   position: absolute;
   width: 43px;
   height: 43px;
@@ -399,7 +399,7 @@ h1 {
 .tech-img {
   display: table-cell;
   width: 120px;
-  text-align: center;
+  text-align: right;
   vertical-align: middle; }
 
 .tech-content {
