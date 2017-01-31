@@ -7,6 +7,27 @@ ul {
   margin: 0;
   padding: 0; }
 
+a, a:hover, a:focus, a:active {
+  text-decoration: none;
+  color: #292929; }
+
+.az-center {
+  text-align: center; }
+
+.az-button {
+  font-family: 'arialnarrowbold';
+  font-size: 18px;
+  color: #fff;
+  background: #e74c3c;
+  border-radius: 4px;
+  display: inline-block;
+  padding: 18px 7px;
+  text-transform: uppercase; }
+
+.az-button:hover {
+  background: #c12313;
+  color: #fff; }
+
 /*header*/
 .header {
   width: 100%;
@@ -26,7 +47,6 @@ ul {
   color: #2c3e50; }
 
 .logo-text2 {
-  font-family: 'arialnarrow';
   font-size: 20px;
   color: #292929;
   display: inline-block; }
@@ -43,7 +63,6 @@ ul {
       position: relative;
       color: #292929;
       text-decoration: none;
-      font-family: 'arialnarrow';
       font-size: 20px;
       text-transform: uppercase;
       line-height: 20px; }
@@ -56,7 +75,7 @@ ul {
       left: 0;
       top: 100%;
       height: 3px;
-      background: url(../img/menu-hover.png) repeat-x top left; }
+      background: url(../img/menu-hover.png) repeat-x left top; }
   .menu li:first-child {
     margin-left: 0; }
 
@@ -66,5 +85,35 @@ ul {
 
 /*margin*/
 /*header*/
+/*block1*/
+.block1 {
+  background: url(../img/1.jpg) no-repeat center top;
+  width: 100%;
+  height: 536px;
+  text-align: center;
+  padding-top: 170px; }
+
+h1 {
+  font-family: 'arialnarrowbold';
+  font-size: 60px;
+  color: #ecf0f1;
+  line-height: 70px;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0; }
+
+.block1-subtitle {
+  font-family: 'arialnarrowbold';
+  font-size: 20px;
+  line-height: 40px;
+  color: #ecf0f1;
+  text-transform: uppercase;
+  display: block; }
+
+/*margin*/
+.az-margin-top20 {
+  margin-top: 20px; }
+
+/*margin*/
 
 /*# sourceMappingURL=style.css.map */
