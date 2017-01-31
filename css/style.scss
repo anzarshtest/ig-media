@@ -401,3 +401,61 @@ h2{
 		}
 	}
 /*block7*/
+
+/*block8*/
+	.campaign{
+		background: #edf6fc;
+		padding-top: 20px;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	.h2-style2{
+		strong{
+			color: #e74c3c;
+		}
+	}
+/*block8*/
+
+/*block9*/
+	.technology{
+		text-align: center;
+		padding-top: 30px;
+		padding-bottom: 20px;
+	}
+	.tech-subtitle{
+		line-height: 47px;
+		font-size: 19px;
+	}
+	.tech-item-outer{
+		display: inline-block;
+		width: calc(100% - 70px);
+	}
+	.tech-item{
+		display: table;
+		min-height: 130px;
+		width: 100%;
+	}
+	.tech-img{
+		display: table-cell;
+		width: 120px;
+		text-align: center;
+		vertical-align: middle;
+	}
+	.tech-content{
+		display: table-cell;
+		width: calc(100% - 120px);
+		text-align: left;
+		vertical-align: middle;
+		padding-left: 20px;
+	}
+	.tech-cont-title{
+		font-size: 19px;
+		font-family: 'arialnarrowbold';
+		line-height: 47px;
+		text-transform: uppercase;
+	}
+	.tech-cont-text{
+		font-size: 19px;
+		line-height: 23px;
+	}
+/*block9*/
