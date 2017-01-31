@@ -432,19 +432,20 @@ h2{
 	}
 	.tech-item{
 		display: table;
-		min-height: 130px;
+		min-height: 125px;
 		width: 100%;
+		margin-bottom: 10px;
 	}
 	.tech-img{
 		display: table-cell;
-		width: 120px;
-		text-align: right;
+		width: 130px;
+		text-align: center;
 		vertical-align: middle;
-
+		border: 3px solid #2c3e50;
 	}
 	.tech-content{
 		display: table-cell;
-		width: calc(100% - 120px);
+		width: calc(100% - 130px);
 		text-align: left;
 		vertical-align: middle;
 		padding-left: 20px;
@@ -452,8 +453,9 @@ h2{
 	.tech-cont-title{
 		font-size: 19px;
 		font-family: 'arialnarrowbold';
-		line-height: 47px;
+		line-height: 19px;
 		text-transform: uppercase;
+		margin-bottom: 7px;
 	}
 	.tech-cont-text{
 		font-size: 19px;
