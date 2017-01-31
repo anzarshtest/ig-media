@@ -1,3 +1,4 @@
+@charset "UTF-8";
 body {
   font-family: 'arialnarrow';
   line-height: 1;
@@ -38,7 +39,8 @@ h2 {
   border-radius: 4px;
   display: inline-block;
   padding: 18px 7px;
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  min-width: 115px; }
 
 .az-button:hover {
   background: #c12313;
@@ -72,7 +74,7 @@ h2 {
   text-align: right; }
   .menu li {
     display: inline-block;
-    margin-left: 55px;
+    margin-left: 30px;
     line-height: 105px; }
     .menu li a {
       display: inline-block;
@@ -215,5 +217,81 @@ h1 {
 
 /*margin*/
 /*block4*/
+/*block5*/
+.tax {
+  width: 100%;
+  background: url(../img/2.jpg) no-repeat center top;
+  padding-top: 35px;
+  padding-bottom: 30px; }
+
+.h2-style3 {
+  color: #fff; }
+
+.tax-subtitle {
+  color: #fff;
+  display: block;
+  font-size: 20px;
+  text-align: center;
+  text-transform: uppercase; }
+
+.tax-table {
+  width: 100%;
+  background: #fdfefe;
+  text-align: center; }
+  .tax-table tr:nth-child(2n+1) {
+    background: #eff0f0; }
+  .tax-table tr:first-child {
+    background: #fdfefe; }
+  .tax-table th {
+    line-height: 55px;
+    font-family: 'arialnarrowbold';
+    font-size: 24px;
+    text-transform: uppercase; }
+  .tax-table th:first-child, .tax-table td:first-child {
+    width: 400px;
+    font-family: 'arialnarrow'; }
+  .tax-table th, .tax-table td {
+    border: 1px solid #e0e2e5; }
+  .tax-table td:first-child {
+    text-align: left; }
+  .tax-table td {
+    padding: 3px 5px; }
+  .tax-table tr:last-child td {
+    padding: 7px 5px; }
+
+.az-top {
+  background: #2980b9;
+  color: #fff;
+  position: relative; }
+
+.az-top::after {
+  content: "топ";
+  position: absolute;
+  width: 43px;
+  height: 43px;
+  border-radius: 50%;
+  background: #e74c3c;
+  text-transform: uppercase;
+  text-align: center;
+  font-size: 13px;
+  top: -27px;
+  right: -20px;
+  line-height: 43px; }
+
+.undertable {
+  color: #fff; }
+  .undertable strong {
+    font-weight: 0;
+    color: #e74c3c; }
+
+/*margin*/
+.az-margin-top22 {
+  margin-top: 22px; }
+
+.az-margin-bottom10 {
+  margin-bottom: 10px; }
+
+/*margin*/
+/*block5*/
 
 /*# sourceMappingURL=style.css.map */
