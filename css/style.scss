@@ -24,6 +24,12 @@ h2{
 .az-center{
 	text-align: center;
 }
+.az-right{
+	text-align: right;
+}
+.az-left{
+	text-align: left;
+}
 .az-button{
 	font-family: 'arialnarrowbold';
 	font-size: 18px;
@@ -41,101 +47,101 @@ h2{
 
 
 /*header*/
-.header{
-	width: 100%;
-	height: 105px;
-	background: #d6d7db;
-}
-.logo-box{
-	padding-top: 10px;
-}
-.logo-text-box{
-	margin-left: 8px;
-	padding-top: 16px;
-}
-.logo-text1{
-	font-family: 'arialnarrowbold';
-	font-size: 30px;
-	color: #2c3e50;
-}
-.logo-text2{
-	//font-family: 'arialnarrow';
-	font-size: 20px;
-	color: #292929;
-	display: inline-block;
-}
-.menu{
-	list-style: none;
-	text-align: right;
-	li{
+	.header{
+		width: 100%;
+		height: 105px;
+		background: #d6d7db;
+	}
+	.logo-box{
+		padding-top: 12px;
+	}
+	.logo-text-box{
+		margin-left: 8px;
+		padding-top: 16px;
+	}
+	.logo-text1{
+		font-family: 'arialnarrowbold';
+		font-size: 30px;
+		color: #2c3e50;
+	}
+	.logo-text2{
+		//font-family: 'arialnarrow';
+		font-size: 20px;
+		color: #292929;
 		display: inline-block;
-		margin-left: 55px;
-		line-height: 105px;
-		a{
+	}
+	.menu{
+		list-style: none;
+		text-align: right;
+		li{
 			display: inline-block;
-			position: relative;
-			color: #292929;
-			text-decoration: none;
-			//font-family: 'arialnarrow';
-			font-size: 20px;
-			text-transform: uppercase;
-			line-height: 20px;
+			margin-left: 55px;
+			line-height: 105px;
+			a{
+				display: inline-block;
+				position: relative;
+				color: #292929;
+				text-decoration: none;
+				//font-family: 'arialnarrow';
+				font-size: 20px;
+				text-transform: uppercase;
+				line-height: 20px;
+			}
+			a:hover{
+				color: #2980b9;
+			}
+			a:hover::before{
+				content: '';
+				position: absolute;
+				width: 100%;
+				left: 0;
+				top: 100%;
+				height: 3px;
+				background: url(../img/menu-hover.png) repeat-x left top;
+			}
 		}
-		a:hover{
-			color: #2980b9;
-		}
-		a:hover::before{
-			content: '';
-			position: absolute;
-			width: 100%;
-			left: 0;
-			top: 100%;
-			height: 3px;
-			background: url(../img/menu-hover.png) repeat-x left top;
+		li:first-child{
+			margin-left: 0;
 		}
 	}
-	li:first-child{
-		margin-left: 0;
+	/*margin*/
+	.az-margin-top5{
+		margin-top: 5px;
 	}
-}
-/*margin*/
-.az-margin-top5{
-	margin-top: 5px;
-}
-/*margin*/
+	/*margin*/
 /*header*/
 
 
 /*block1*/
-.block1{
-	background: url(../img/1.jpg) no-repeat center top;
-	width: 100%;
-	height: 536px;
-	text-align: center;
-	padding-top: 170px;
-}
-h1{
-	font-family: 'arialnarrowbold';
-	font-size: 60px;
-	color: #ecf0f1;
-	line-height: 70px;
-	text-transform: uppercase;
-	margin: 0;
-	padding: 0;
-}
-.block1-subtitle{
-	font-family: 'arialnarrowbold';
-	font-size: 20px;
-	line-height: 40px;
-	color: #ecf0f1;
-	text-transform: uppercase;
-	display: block;
-}
-/*margin*/
-.az-margin-top20{
-	margin-top: 20px;
-}
-/*margin*/
+	.block1{
+		background: url(../img/1.jpg) no-repeat center top;
+		width: 100%;
+		height: 536px;
+		text-align: center;
+		padding-top: 170px;
+	}
+	h1{
+		font-family: 'arialnarrowbold';
+		font-size: 60px;
+		color: #ecf0f1;
+		line-height: 70px;
+		text-transform: uppercase;
+		margin: 0;
+		padding: 0;
+	}
+	.block1-subtitle{
+		font-family: 'arialnarrowbold';
+		font-size: 20px;
+		line-height: 40px;
+		color: #fff;//#ecf0f1;
+		text-transform: uppercase;
+		display: block;
+	}
+	/*margin*/
+	.az-margin-top20{
+		margin-top: 20px;
+	}
+	/*margin*/
 
 /*block1*/
 
@@ -164,12 +170,64 @@ h1{
 		padding-left: 19px;
 		line-height: 25px;
 	}
-/*margin*/
-.az-margin-top5{
-	margin-top: 5px;
-}
-.az-margin-top15{
-	margin-top: 15px;
-}
-/*margin*/
+	/*margin*/
+	.az-margin-top5{
+		margin-top: 5px;
+	}
+	.az-margin-top15{
+		margin-top: 15px;
+	}
+	/*margin*/
 /*block2*/
+
+/*block3*/
+	.flow{
+		background: #edf6fc;
+		padding-top: 13px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	.h2-style2{
+		color: #2c3e50;
+	}
+/*block3*/
+
+/*block4*/
+	.advantage{
+		padding-top: 35px;
+		padding-bottom: 30px;
+		text-align: center;
+	}
+	.advantage-item{
+		display: inline-block;
+	}
+	.advantage-img-style1{
+		margin-left: -15px;
+		margin-right: -15px;
+	}
+	.advantage-subtitle{
+		font-size: 19px;
+		display: inline-block;
+	}
+	.advantage-img-style2{
+		padding-top: 42px;
+	}
+	.advantage-img-style3{
+		padding-top: 42px;
+	}
+	.advantage-text{
+		font-size: 19px;
+		text-align: center;
+		width: 230px;
+		margin: 0 auto;
+		line-height: 25px;
+	}
+	/*margin*/
+		.az-margin-bottom25{
+			margin-bottom: 25px;
+		}
+		.az-margin-top10{
+			margin-top: 10px;
+		}
+	/*margin*/
+/*block4*/
