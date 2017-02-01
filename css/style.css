@@ -35,16 +35,19 @@ h2 {
   font-family: 'arialnarrowbold';
   font-size: 18px;
   color: #fff;
-  background: #e74c3c;
+  background: #FF4A38;
   border-radius: 4px;
   display: inline-block;
-  padding: 14px 7px;
+  padding: 14px 9px;
   text-transform: uppercase;
   min-width: 115px;
   cursor: pointer; }
 
 .az-button:hover {
-  background: #c12313;
+  background: #E11E0A;
+  color: #fff; }
+
+.az-button:focus, .az-button:active {
   color: #fff; }
 
 /*header*/
@@ -297,7 +300,8 @@ h1 {
 /*block6*/
 .easy-start {
   text-align: center;
-  padding: 30px 0; }
+  padding: 30px 0;
+  background: #edf6fc; }
 
 .easy-start-text {
   font-size: 36px;
@@ -465,7 +469,7 @@ h1 {
 
 .ff-item {
   width: 100%;
-  background: rgba(46, 64, 81, 0.9);
+  background: rgba(27, 59, 80, 0.9);
   text-align: center;
   padding-bottom: 20px;
   color: #fff;
