@@ -11,6 +11,7 @@ ul{
 a, a:hover, a:focus, a:active{
 	text-decoration: none;
 	color: #292929;
+	outline: none;
 }
 h2{
 	font-family: 'arialnarrowbold';
@@ -42,14 +43,17 @@ h2{
 	text-transform: uppercase;
 	min-width: 115px;
 	cursor: pointer;
+	outline: none;
 }
 .az-button:hover{
 	// background: #c12313;
 	background: #E11E0A;
 	color: #fff;
+	outline: none;
 }
 .az-button:focus, .az-button:active{
 	color: #fff;
+	outline: none;
 }
 
 
@@ -659,3 +663,89 @@ h2{
 			margin-top: 35px;
 		}
 /*footer*/
+
+/*popups*/
+	.popups{
+		display: none;
+	}
+	.popup{
+		padding: 25px;
+		background: #1B3B50;//#2c3e50;
+		border: 3px solid #0081BC;//#2980b9;
+		max-width: 492px;
+		border-radius: 3px;
+		margin: 0 auto;
+	}
+	.az-form-popup{
+		width: 280px;
+		margin: 20px auto;
+	}
+	.popup-title{
+		color: #fff;
+		font-family: 'arialnarrowbold';
+		font-size: 32px;
+		display: block;
+		text-align: center;
+	}
+	.mfp-close{
+		color: #fff !important;
+	}
+	/**
+	 * Fade-move animation for second dialog
+	 */
+
+	/* at start */
+	.my-mfp-slide-bottom .zoom-anim-dialog {
+		opacity: 0;
+		-webkit-transition: all 0.2s ease-out;
+		-moz-transition: all 0.2s ease-out;
+		-o-transition: all 0.2s ease-out;
+		transition: all 0.2s ease-out;
+
+		-webkit-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+		-moz-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+		-ms-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+		-o-transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+		transform: translateY(-20px) perspective( 600px ) rotateX( 10deg );
+
+	}
+
+	/* animate in */
+	.my-mfp-slide-bottom.mfp-ready .zoom-anim-dialog {
+		opacity: 1;
+		-webkit-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+		-moz-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+		-ms-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+		-o-transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+		transform: translateY(0) perspective( 600px ) rotateX( 0 ); 
+	}
+
+	/* animate out */
+	.my-mfp-slide-bottom.mfp-removing .zoom-anim-dialog {
+		opacity: 0;
+
+		-webkit-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+		-moz-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+		-ms-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+		-o-transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+		transform: translateY(-10px) perspective( 600px ) rotateX( 10deg ); 
+	}
+
+	/* Dark overlay, start state */
+	.my-mfp-slide-bottom.mfp-bg {
+		opacity: 0;
+
+		-webkit-transition: opacity 0.3s ease-out; 
+		-moz-transition: opacity 0.3s ease-out; 
+		-o-transition: opacity 0.3s ease-out; 
+		transition: opacity 0.3s ease-out;
+	}
+	/* animate in */
+	.my-mfp-slide-bottom.mfp-ready.mfp-bg {
+		opacity: 0.8;
+	}
+	/* animate out */
+	.my-mfp-slide-bottom.mfp-removing.mfp-bg {
+		opacity: 0;
+	}
+/*popups*/
