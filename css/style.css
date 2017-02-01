@@ -266,7 +266,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "топ";
+  content: "╤В╨╛╨┐";
   position: absolute;
   width: 43px;
   height: 43px;
@@ -507,5 +507,46 @@ h1 {
   padding-bottom: 15px; }
 
 /*block11*/
+/*block12*/
+.questions {
+  padding-bottom: 40px;
+  padding-top: 30px; }
+
+.az-form label {
+  font-family: 'arialnarrowbold';
+  line-height: 50px; }
+  .az-form label strong {
+    color: #e74c3c; }
+.az-form input[type="text"], .az-form textarea {
+  width: 100%;
+  border: 2px solid #acadad;
+  height: 50px;
+  padding: 0 8px;
+  font-family: 'arialnarrowitalic';
+  line-height: 50px;
+  outline: none;
+  margin-bottom: 20px; }
+.az-form textarea {
+  height: 175px;
+  resize: none;
+  line-height: 20px;
+  padding: 10px 8px; }
+.az-form input[type="submit"] {
+  font-family: 'arialnarrowbold';
+  font-size: 18px;
+  color: #fff;
+  background: #e74c3c;
+  display: inline-block;
+  padding: 14px 7px;
+  text-transform: uppercase;
+  width: 100%;
+  cursor: pointer;
+  border: none;
+  outline: none; }
+.az-form input[type="submit"]:hover {
+  background: #c12313;
+  color: #fff; }
+
+/*block12*/
 
 /*# sourceMappingURL=style.css.map */
