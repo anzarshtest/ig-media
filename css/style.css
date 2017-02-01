@@ -266,7 +266,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "╤В╨╛╨┐";
+  content: "топ";
   position: absolute;
   width: 43px;
   height: 43px;
@@ -548,5 +548,56 @@ h1 {
   color: #fff; }
 
 /*block12*/
+/*footer*/
+.footer {
+  background: #2c3e50;
+  height: 109px; }
+
+.contact {
+  color: #fff;
+  font-family: Arial;
+  font-size: 18px;
+  line-height: 30px;
+  display: inline-block;
+  padding: 14px 0 6px 0; }
+
+.envelope {
+  color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
+  padding-left: 20px;
+  background: url(../img/envelope.png) no-repeat left center; }
+
+.envelope:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+.skype {
+  color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+  text-decoration: underline;
+  padding-left: 20px;
+  background: url(../img/skype.png) no-repeat left center; }
+
+.skype:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+.order {
+  color: #fff;
+  font-family: Arial;
+  font-size: 16px;
+  line-height: 20px;
+  display: inline-block; }
+
+/*margin*/
+.az-margin-top35 {
+  margin-top: 35px; }
+
+/*footer*/
 
 /*# sourceMappingURL=style.css.map */
