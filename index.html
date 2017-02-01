@@ -22,26 +22,28 @@
 <body>
 
     <header class="header">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="logo-box clearfix">
-                        <div class="img-box pull-left">
-                            <a href="/"><img src="img/logo.png" alt=""></a> 
-                        </div>
-                        <div class="logo-text-box pull-left">
-                            <span class="logo-text1">iGENERAL-MEDIA</span><br>
-                            <span class="logo-text2 az-margin-top5">Приведем ваших клиентов</span>
+        <div class="header-inner">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-5">
+                        <div class="logo-box clearfix">
+                            <div class="img-box pull-left">
+                                <a href="/"><img src="img/logo.png" alt=""></a> 
+                            </div>
+                            <div class="logo-text-box pull-left">
+                                <span class="logo-text1">iGENERAL-MEDIA</span><br>
+                                <span class="logo-text2 az-margin-top5">Приведем ваших клиентов</span>
+                            </div>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-7">
-                    <ul class="menu">
-                        <li><a href="#">Главная</a></li>
-                        <li><a href="#">Преимущества</a></li>
-                        <li><a href="#">Тарифы</a></li>
-                        <li><a href="#">Этапы работ</a></li>
-                    </ul>
+                    <div class="col-md-7">
+                        <ul class="menu">
+                            <li><a href="#">Главная</a></li>
+                            <li><a href="#">Преимущества</a></li>
+                            <li><a href="#">Тарифы</a></li>
+                            <li><a href="#">Этапы работ</a></li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -310,10 +312,10 @@
                         </tr>
                         <tr>
                             <td></td>
-                            <td><a href="#order-popup" class="az-button popup-with-move-anim">выбрать</a></td>
-                            <td><a href="#order-popup" class="az-button popup-with-move-anim">выбрать</a></td>
-                            <td><a href="#order-popup" class="az-button popup-with-move-anim">выбрать</a></td>
-                            <td><a href="#order-popup" class="az-button popup-with-move-anim">выбрать</a></td>
+                            <td><a href="#order-popup" data-tax="ТЕСТ НИШИ" class="az-button popup-with-move-anim">выбрать</a></td>
+                            <td><a href="#order-popup" data-tax="РИСКОВАННЫЙ" class="az-button popup-with-move-anim">выбрать</a></td>
+                            <td><a href="#order-popup" data-tax="СТАНДАРТНЫЙ" class="az-button popup-with-move-anim">выбрать</a></td>
+                            <td><a href="#order-popup" data-tax="ИНДИВИДУАЛЬНЫЙ" class="az-button popup-with-move-anim">выбрать</a></td>
                         </tr>
                     </table>
                     <span class="undertable "><strong>*</strong>Минимальный бюджет на рекламу от 17.000 рублей</span>
@@ -327,7 +329,7 @@
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
-                    <span class="easy-start-text">Начать легко, предлагаем<br><a href="#audit-popup" class="popup-with-move-anim"><strong>АУДИТ РЕКЛАМЫ</strong></a> или <a href="#forecast-popup" class="popup-with-move-anim"><strong>ПРОГНОЗ БЮДЖЕТА</strong></a></span>
+                    <span class="easy-start-text">Начать легко, предлагаем<br><a href="#forecast-popup" class="popup-with-move-anim"><strong>ПРОГНОЗ БЮДЖЕТА</strong></a> или <a href="#audit-popup" class="popup-with-move-anim"><strong>АУДИТ РЕКЛАМЫ</strong></a></span>
                 </div>
             </div>
         </div>
@@ -633,7 +635,7 @@
                 </div>
             </div>
             <div class="row">
-                <form id="questions-form" class="az-form az-send">
+                <form id="questions-form" class="az-form az-send2">
                     <div class="col-md-6">
                         <label for="">Ваше Имя<strong>*</strong></label>
                         <input type="text" name="uname" placeholder="Введите Ваше имя">
@@ -674,41 +676,71 @@
 
     <div class="popups">
         <div class="popup zoom-anim-dialog mfp-hide" id="common-popup">
-            <span class="popup-title">Мы подберем для Вас<br>самый подходящий вариант:</span>
-            <form id="popup-form-common" class="az-form az-form-popup az-send">
-                <input type="hidden" name="title" value="Мы подберем для Вас самый подходящий вариант">
-                <input type="text" placeholder="Как к Вам обращаться?" name="uname">
-                <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
-                <input type="submit" value="ОТПРАВИТЬ">
-            </form>
+            <div class="popup-first">
+                <span class="popup-title">Мы подберем для Вас<br>самый подходящий вариант:</span>
+                <form id="popup-form-common" class="az-form az-form-popup az-send">
+                    <input type="hidden" name="title" value="Мы подберем для Вас самый подходящий вариант">
+                    <input type="text" placeholder="Как к Вам обращаться?" name="uname">
+                    <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
+                    <input type="submit" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+            <div class="popup-thanks">
+                <div class="az-center az-margin-bottom25 az-margin-top35"><img src="./img/ok.png" alt="ok"></div>
+                <span class="popup-title az-margin-bottom25">Спасибо, заявка передана<br>нашим специалистам</span>
+            </div>
         </div>
         <div class="popup zoom-anim-dialog mfp-hide" id="forecast-popup">
-            <span class="popup-title">Перед прогнозом мы уточним<br>у вас несколько вопросов:</span>
-            <form id="popup-form-forecast" class="az-form az-form-popup az-send">
-                <input type="hidden" name="title" value="Перед прогнозом мы уточним у вас несколько вопросов">
-                <input type="text" placeholder="Как к Вам обращаться?" name="uname">
-                <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
-                <input type="submit" value="РАССЧИТАТЬ БЮДЖЕТ">
-            </form>
+            <div class="popup-first">
+                <span class="popup-title">Перед прогнозом мы уточним<br>у вас несколько вопросов:</span>
+                <form id="popup-form-forecast" class="az-form az-form-popup az-send">
+                    <input type="hidden" name="title" value="Перед прогнозом мы уточним у вас несколько моментов">
+                    <input type="text" placeholder="Как к Вам обращаться?" name="uname">
+                    <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
+                    <input type="submit" value="РАССЧИТАТЬ БЮДЖЕТ">
+                </form>
+            </div>
+            <div class="popup-thanks">
+                <div class="az-center az-margin-bottom25 az-margin-top35"><img src="./img/ok.png" alt="ok"></div>
+                <span class="popup-title az-margin-bottom25">Спасибо, заявка передана<br>нашим специалистам</span>
+            </div>
         </div>
         <div class="popup zoom-anim-dialog mfp-hide" id="audit-popup">
-            <span class="popup-title">Перед аудитом, мы уточним<br>у вас несколько моментов:</span>
-            <form id="popup-form-audit" class="az-form az-form-popup az-send">
-                <input type="hidden" name="title" value="Перед аудитом, мы уточним у вас несколько моментов">
-                <input type="text" placeholder="Как к Вам обращаться?" name="uname">
-                <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
-                <input type="submit" value="РАССЧИТАТЬ БЮДЖЕТ">
-            </form>
+            <div class="popup-first">
+                <span class="popup-title">Перед аудитом, мы уточним<br>у вас несколько моментов:</span>
+                <form id="popup-form-audit" class="az-form az-form-popup az-send">
+                    <input type="hidden" name="title" value="Перед аудитом, мы уточним у вас несколько моментов">
+                    <input type="text" placeholder="Как к Вам обращаться?" name="uname">
+                    <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
+                    <input type="submit" value="РАССЧИТАТЬ БЮДЖЕТ">
+                </form>
+            </div>
+            <div class="popup-thanks">
+                <div class="az-center az-margin-bottom25 az-margin-top35"><img src="./img/ok.png" alt="ok"></div>
+                <span class="popup-title az-margin-bottom25">Спасибо, заявка передана<br>нашим специалистам</span>
+            </div>
         </div>
         <div class="popup zoom-anim-dialog mfp-hide" id="order-popup">
-            <span class="popup-title">Заполните форму ниже,<br>и мы свяжемся с вами:</span>
-            <form id="popup-form-order" class="az-form az-form-popup az-send">
-                <input type="hidden" name="title" value="Заполните форму ниже, и мы свяжемся с вами">
-                <input type="text" placeholder="Как к Вам обращаться?" name="uname">
-                <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
-                <input type="submit" value="ОТПРАВИТЬ">
-            </form>
+            <div class="popup-first">
+                <span class="popup-title">Заполните форму ниже,<br>и мы свяжемся с вами:</span>
+                <form id="popup-form-order" class="az-form az-form-popup az-send">
+                    <input type="hidden" id="az-tax" name="tax" value="none">
+                    <input type="hidden" name="title" value="Заполните форму ниже, и мы свяжемся с вами">
+                    <input type="text" placeholder="Как к Вам обращаться?" name="uname">
+                    <input type="text" placeholder="Ваш номер телефона?" class="phone" name="tel">
+                    <input type="submit" value="ОТПРАВИТЬ">
+                </form>
+            </div>
+            <div class="popup-thanks">
+                <div class="az-center az-margin-bottom25 az-margin-top35"><img src="./img/ok.png" alt="ok"></div>
+                <span class="popup-title az-margin-bottom25">Спасибо, заявка передана<br>нашим специалистам</span>
+            </div>
         </div>
+        <div class="popup zoom-anim-dialog mfp-hide" id="thanks-popup">
+            <div class="az-center az-margin-bottom25 az-margin-top35"><img src="./img/ok.png" alt="ok"></div>
+            <span class="popup-title az-margin-bottom25">Спасибо, заявка передана<br>нашим специалистам</span>
+        </div>
+        <a href="#thanks-popup" id="az-thanks" class="az-button popup-with-move-anim">выбрать</a>
     </div>
 
 	<!-- START: Scripts -->
