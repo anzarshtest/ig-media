@@ -116,6 +116,18 @@ h2 {
       top: 100%;
       height: 3px;
       background: url(../img/menu-hover.png) repeat-x left top; }
+    .menu li .az-marked {
+      color: #e74c3c;
+      display: inline-block;
+      position: relative; }
+    .menu li .az-marked::before {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2px;
+      left: 0;
+      bottom: -3px;
+      background: url(../img/border-bottom.png) repeat-x left top; }
   .menu li:first-child {
     margin-left: 0; }
 
