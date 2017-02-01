@@ -18,10 +18,10 @@
 }
 @font-face {
     font-family: 'arialnarrowitalic';
-    src: url('../fonts/arialnarrowbold/arialnarrowitalic.eot');
-    src: url('../fonts/arialnarrowbold/arialnarrowitalic.eot') format('embedded-opentype'),
-         url('../fonts/arialnarrowbold/arialnarrowitalic.woff2') format('woff2'),
-         url('../fonts/arialnarrowbold/arialnarrowitalic.woff') format('woff'),
-         url('../fonts/arialnarrowbold/arialnarrowitalic.ttf') format('truetype'),
-         url('../fonts/arialnarrowbold/arialnarrowitalic.svg#arialnarrowitalic') format('svg');
+    src: url('../fonts/arialnarrowitalic/arialnarrowitalic.eot');
+    src: url('../fonts/arialnarrowitalic/arialnarrowitalic.eot') format('embedded-opentype'),
+         url('../fonts/arialnarrowitalic/arialnarrowitalic.woff2') format('woff2'),
+         url('../fonts/arialnarrowitalic/arialnarrowitalic.woff') format('woff'),
+         url('../fonts/arialnarrowitalic/arialnarrowitalic.ttf') format('truetype'),
+         url('../fonts/arialnarrowitalic/arialnarrowitalic.svg#arialnarrowitalic') format('svg');
 }

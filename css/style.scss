@@ -40,6 +40,7 @@ h2{
 	padding: 14px 7px;
 	text-transform: uppercase;
 	min-width: 115px;
+	cursor: pointer;
 }
 .az-button:hover{
 	background: #c12313;
@@ -504,5 +505,46 @@ h2{
 	}
 	.h2-style4{
 		color: #ecf0f1;
+	}
+	.ff-item{
+		width: 100%;
+		background: rgba(46, 64, 81, 0.9);
+		text-align: center;
+		padding-bottom: 20px;
+		color: #fff;
+		margin-top: 40px;
+	}
+	.ff-item-style2{
+		color: #292929;
+		background: #d9e1e7;
+		.ff-item-title{
+			background: #4d5d6d;
+			color: #ecf0f1;
+		}
+	}
+	.ff-item-title{
+		display: block;
+		color: #000102;
+		background: #fff;
+		font-family: 'arialnarrowbold';
+		font-size: 28px;
+		line-height: 55px;
+		text-transform: uppercase;
+	}
+	.ff-item-img{
+		padding-top: 15px;
+	}
+	.ff-item-subtitle{
+		display: block;
+		font-family: 'arialnarrowitalic';
+		font-size: 20px;
+		line-height: 50px;
+	}
+	.ff-item-text{
+		display: block;
+		font-size: 20px;
+		line-height: 25px;
+		padding-top: 10px;
+		padding-bottom: 15px;
 	}
 /*block11*/
