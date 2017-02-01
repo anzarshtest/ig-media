@@ -76,7 +76,6 @@ $(document).ready(function(){
     });
     $('.az-send2').submit(function(){
         var email = $(this).find('input[name="email"]');
-        // alert(email.val());
         var uname = $(this).find('input[name="uname"]');
         var text = $(this).find('textarea[name="text"]');
         var empty = false;
@@ -101,13 +100,9 @@ $(document).ready(function(){
                 data: form_data,
                 success: function(data) {
                     data2 = eval('('+data+')');
-                    // alert(typeof(data2));
-                    // alert(typeof(data));
                     if(data2.result){
-                        // alert(2);
                         $('#az-thanks').trigger('click');
                     }else{
-                        // alert(1);
                     }
                 }
             });
@@ -129,18 +124,14 @@ $(document).ready(function(){
     //     }
     // });
 
-    $(document).ready(function(){
+
     $(".menu").on("click","a", function (event) {
-        //отменяем стандартную обработку нажатия по ссылке
         event.preventDefault();
-        //забираем идентификатор бока с атрибута href
         var id  = $(this).attr('href'),
-        //узнаем высоту от начала страницы до блока на который ссылается якорь
             top = $(id).offset().top;
-        //анимируем переход на расстояние - top за 1500 мс
         $('body,html').animate({scrollTop: top}, 1500);
     });
-});
+
 
 
 });
