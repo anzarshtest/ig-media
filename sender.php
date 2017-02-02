@@ -1,39 +1,45 @@
 <?php
-$subject = "Сообщение с сайта iGENERAL-MEDIA"; //Subject:
+$subject = "Заявка на настройку Яндекс.Директ "; //Subject:
 $from_name = "Заявка"; //From:
 $from_email = "info@igeneral-media.ru"; //From:
-$tosend = "1@pyatko.ru";
+$tosend = "info@ig-media.ru";//"1@pyatko.ru";
 
 $name = isset($_POST['uname'])?$_POST['uname']:$from_name;
 $phone = $_POST['tel'];
-$text = $_POST['text'];
+$text = $_POST['utext'];
 $email = isset($_POST['email'])?$_POST['email']:$from_email;
-$tax = $_POST['tax'];
 $formname = $_POST['title'];
 $page = $_POST['url'];
+$id = $_POST['id'];
+$subject .= $id.': '.$formname;
+if($id == 'CTA 12'){
+	$subject = "Вопрос по настройке Яндекс.Директ ".$id.': '.$formname;
+}
+// $msg  = "<p><strong>".$subject."</strong></p>\r\n";
+$msg = "<table border='2' cellpadding='10'>\r\n";
 
-$msg  = "<p><strong>".$subject."</strong></p>\r\n";
-$msg .= "<table border='2' cellpadding='10'><tr><td><p><strong>С какой страницы:</strong></td><td><a href='".$page."'>".$page."</a></td></tr>\r\n";
-$msg .= "<tr><td><p><strong>Из какой формы:</strong></td><td> ".$formname."</p></td></tr>\r\n";
-
-if ($phone != '-' && !empty($phone)) {
-	$msg .= "<tr><td><p><strong>Телефон:</strong></td><td> ".$phone."</p></td></tr>\r\n";
+if ($name != '-' && !empty($name) && isset($_POST['uname'])) {
+	$msg .= "<tr><td><p><strong>Имя:</strong></td><td> &nbsp;".$name."</p></td></tr>\r\n";
 }
 
 if ($email != '-' && !empty($email) && isset($_POST['email'])) {
-	$msg .= "<tr><td><p><strong>E-mail:</strong></td><td> ".$email."</p></td></tr>\r\n";
+	$msg .= "<tr><td><p><strong>E-mail:</strong></td><td> &nbsp;".$email."</p></td></tr>\r\n";
 }
 
-if ($name != '-' && !empty($name) && isset($_POST['uname'])) {
-	$msg .= "<tr><td><p><strong>Имя:</strong></td><td> ".$name."</p></td></tr>\r\n";
-}
-
-if ($tax != '-' && !empty($tax) && isset($_POST['tax'])) {
-	$msg .= "<tr><td><p><strong>Тариф:</strong></td><td> ".$tax."</p></td></tr>\r\n";
+if ($phone != '-' && !empty($phone)) {
+	$msg .= "<tr><td><p><strong>Телефон:</strong></td><td> &nbsp;".$phone."</p></td></tr>\r\n";
 }
 
 if ($text != '-' && !empty($text)) {
-	$msg .= "<tr><td><p><strong>Сообщение:</strong></td><td> ".$text."</p></td></tr>\r\n";
+	$msg .= "<tr><td><p><strong>Сообщение:</strong></td><td> &nbsp;".$text."</p></td></tr>\r\n";
+}
+
+if ($page != '-' && !empty($page)) {
+	$msg .= "<tr><td><p><strong>Страница:</strong></td><td> &nbsp;<a href='".$page."'>".$page."</a></td></tr>\r\n";
+}
+
+if ($id != '-' && !empty($id) && !empty($formname) ) {
+	$msg .= "<tr><td><p><strong>Форма:</strong></td><td> &nbsp;".$id.": ". $formname ."</p></td></tr>\r\n";
 }
 
 $msg .= "</table>";

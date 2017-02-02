@@ -3,11 +3,11 @@ $(document).ready(function(){
     $(".phone").mask("+ 7 ( 999 ) 999 - 99 - 99?");
 
     /*popup*/
-        $('.popup-with-move-anim').click(function(){
-            if($(this).attr('data-tax') != ''){
-                $('#az-tax').val($(this).attr('data-tax'));
-            }
-        });
+        // $('.popup-with-move-anim').click(function(){
+        //     if($(this).attr('data-tax') != ''){
+        //         $('#az-tax').val($(this).attr('data-tax'));
+        //     }
+        // });
         $('.popup-with-move-anim').magnificPopup({
             type: 'inline',
 
@@ -41,6 +41,7 @@ $(document).ready(function(){
     });
 
     $('.az-send').submit(function(){
+        var uname = $(this).find('input[name="uname"]');
         var tel = $(this).find('input[name="tel"]');
         var empty = false;
         var az_this = $(this);
@@ -48,7 +49,10 @@ $(document).ready(function(){
         if (!reg_tel.test(tel.val())){
             empty = true;
         }
-        if (empty == true){
+        if(uname.val() == ''){
+            uname.addClass("error-input");
+            uname.focus();
+        }else if (empty == true){
             tel.addClass("error-input");
             tel.focus();
         }else{
@@ -59,15 +63,11 @@ $(document).ready(function(){
                 data: form_data,
                 success: function(data) {
                     data2 = eval('('+data+')');
-                    // alert(typeof(data2));
-                    // alert(typeof(data));
                     if(data2.result){
-                        // alert(2);
                         $('input[type="text"]').removeClass("error-input");
                         $("input[type=text], textarea").val("");
                         az_this.parents('.popup-first').hide().next('.popup-thanks').show();
                     }else{
-                        // alert(1);
                     }
                 }
             });
@@ -77,19 +77,19 @@ $(document).ready(function(){
     $('.az-send2').submit(function(){
         var email = $(this).find('input[name="email"]');
         var uname = $(this).find('input[name="uname"]');
-        var text = $(this).find('textarea[name="text"]');
+        var text = $(this).find('textarea');
         var empty = false;
         var az_this = $(this);
         if (!az_validateEmail(email.val())){
             empty = true;
         }
-        if (empty == true){
-            email.addClass("error-input");
-            email.focus();
-        }else if(uname.val() == ''){
+        if(uname.val() == ''){
             uname.addClass("error-input");
             uname.focus();
-        }else if(uname.val() == ''){
+        }else if(empty == true){
+            email.addClass("error-input");
+            email.focus();
+        }else if(text.val() == ''){
             text.addClass("error-input");
             text.focus();
         }else{
