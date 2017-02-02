@@ -23,6 +23,9 @@ h2 {
   margin: 0;
   padding: 0; }
 
+.container {
+  width: 1170px; }
+
 .az-center {
   text-align: center; }
 
@@ -299,7 +302,7 @@ h1 {
   position: relative; }
 
 .az-top::after {
-  content: "топ";
+  content: "╤В╨╛╨┐";
   position: absolute;
   width: 43px;
   height: 43px;
