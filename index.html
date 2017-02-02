@@ -3,7 +3,16 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1"> -->
+    <script>
+        if (window.devicePixelRatio !== 1) { // Костыль для определения иных устройств, с коэффициентом отличным от 1       
+            //alert(window.devicePixelRatio);
+          var dpt = window.devicePixelRatio;
+          var widthM = window.screen.width * dpt;
+          var widthH = window.screen.height * dpt;
+          document.write('<meta name="viewport" content="width=' + widthM+ ', height=' + widthH + '">');
+        }
+    </script>
 	<title>iGENERAL-MEDIA</title>
 	<meta content="" name="description">
 	<meta content="" name="keywords">
@@ -12,7 +21,10 @@
     <link href="css/bootstrap.css" rel="stylesheet">
     <link href="libs/magnific-popup/magnific-popup.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
-
+    <script src="//mc.yandex.ru/metrika/watch.js" type="text/javascript"></script>
+    <script type="text/javascript">
+      var yaCounter42534779 = new Ya.Metrika({id: 42534779});
+    </script>
 <!--[if lt IE 9]>
 <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
 <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
@@ -102,7 +114,7 @@
                             <div class="advertising-img pull-left">
                                 <img src="./img/adv5.png" alt="adv5">
                             </div>
-                            <div class="advertising-text pull-left">Возворащаем старых клиентов за повторными заказами по email и телефонам вашей базы</div>
+                            <div class="advertising-text pull-left">Возвращаем старых клиентов за повторными заказами по email и телефонам вашей базы</div>
                         </div>
                     </div>
                 </div>

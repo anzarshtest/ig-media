@@ -10,9 +10,9 @@ $(document).ready(function(){
         // });
         $('.popup-with-move-anim').magnificPopup({
             type: 'inline',
-
+            autoFocusLast: false,
             fixedContentPos: false,
-            fixedBgPos: true,
+            fixedBgPos: false,
 
             overflowY: 'auto',
 
@@ -64,6 +64,7 @@ $(document).ready(function(){
                 success: function(data) {
                     data2 = eval('('+data+')');
                     if(data2.result){
+                        yaCounter42534779.reachGoal('actionzayavka');
                         $('input[type="text"]').removeClass("error-input");
                         $("input[type=text], textarea").val("");
                         az_this.parents('.popup-first').hide().next('.popup-thanks').show();
@@ -101,6 +102,7 @@ $(document).ready(function(){
                 success: function(data) {
                     data2 = eval('('+data+')');
                     if(data2.result){
+                        yaCounter42534779.reachGoal('actionzayavka');
                         $('#az-thanks').trigger('click');
                     }else{
                     }

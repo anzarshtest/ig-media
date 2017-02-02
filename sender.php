@@ -27,7 +27,7 @@ if ($email != '-' && !empty($email) && isset($_POST['email'])) {
 }
 
 if ($phone != '-' && !empty($phone)) {
-	$msg .= "<tr><td><p><strong>Телефон:</strong></td><td> &nbsp;".$phone."</p></td></tr>\r\n";
+	$msg .= "<tr><td><p><strong>Телефон:</strong></td><td> &nbsp;".str_replace("  ", " ", str_replace("-", "", $phone))."</p></td></tr>\r\n";
 }
 
 if ($text != '-' && !empty($text)) {
