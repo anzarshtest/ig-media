@@ -23,7 +23,7 @@ h2 {
   margin: 0;
   padding: 0; }
 
-.header, .footer, section {
+.header, .footer, .mfp-bg, .mfp-wrap, section {
   min-width: 1170px; }
 
 .container {
